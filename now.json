@@ -1,0 +1,11 @@
+{
+	"version": 2,
+	"github": {
+		"enabled": true
+	},
+	"cleanUrls": true,
+	"env": {
+		"AUTH_EMAIL": "@auth_email",
+		"AUTH_PASSWORD": "@auth_password"
+	}
+}
