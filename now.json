@@ -7,5 +7,28 @@
 	"env": {
 		"AUTH_EMAIL": "@auth_email",
 		"AUTH_PASSWORD": "@auth_password"
-	}
+	},
+	"headers": [
+		{
+			"source": "/api/(.*)",
+			"headers": [
+				{
+					"key": "Access-Control-Allow-Origin",
+					"value": "*"
+				},
+				{
+					"key": "Access-Control-Allow-Methods",
+					"value": "OPTIONS"
+				},
+				{
+					"key": "Access-Control-Allow-Headers",
+					"value": "Accept,Content-Type"
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			]
+		}
+	]
 }
